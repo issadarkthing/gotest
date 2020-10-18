@@ -1,4 +1,4 @@
-module github.com/marcelloh/gotest
+module github.com/issadarkthing/gotest
 
 go 1.14
 
