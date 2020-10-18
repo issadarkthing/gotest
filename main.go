@@ -94,29 +94,16 @@ func run() int {
 		colorRed()
 		print("Total fails: ", totalFails, " ")
 		ct.ResetColor()
-		sadSmiley()
 		println()
 	} else {
 		colorGreen()
 		print("No fails ")
-		happySmiley()
 		println()
 	}
 
 	return exitCode
 }
 
-func sadSmiley() {
-	colorMagenta()
-	print(":-(")
-	ct.ResetColor()
-}
-
-func happySmiley() {
-	colorMagenta()
-	print(":-)")
-	ct.ResetColor()
-}
 
 func gotest(args []string) int {
 	var wg sync.WaitGroup
